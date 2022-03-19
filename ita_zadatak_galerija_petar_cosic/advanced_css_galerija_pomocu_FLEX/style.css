@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.placeholder_div {
+  background-color: #6ca2d9;
+  border-radius: 15px;
+  box-shadow: 0 0 50px rgb(219, 219, 219);
+  width: 140px;
+  height: 140px;
+}
+
+.placeholder-slike img:hover {
+  transform: scale(1.5);
+}
+
+.placeholder-slike img {
+  display: block;
+  margin: 0 0 7px 0;
+  width: 100%;
+}
+
+.placeholder-slike {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.wrapper h1 {
+  font-weight: lighter;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.text_div {
+  margin: 0;
+  height: 40px;
+  background-color: #faf7ff;
+  text-align: center;
+  line-height: 37px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.wrapper > p {
+  text-align: justify;
+  line-height: 22px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 1000px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 90%;
+  }
+  .placeholder-slike {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .placeholder_div {
+    margin: 0 auto;
+  }
+}
